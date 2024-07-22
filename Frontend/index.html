@@ -1,12 +1,116 @@
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-    
- </body>
- </html>
+    <title>Sign Up & Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+  <div class="container">
+ <div class="left">
+            <div class="content">
+                <h1>Ethioware Software Engineering Group</h1>
+                <img src="public/image1.png" alt="" width="300" height="300">
+                <h2>Online Community For Students</h2>
+                <p>We're focused on Education and the role of tech to plant the seeds of the future!</p>
+            </div>
+        </div>
+   
+   <div class="right" id="signup" style="display:none;">
+    <div class="form-container">
+        <h2 class ='signh2'>Join & Connect the Fastest Growing Online Community</h2>
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="">
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fName" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="lName" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="uName" placeholder="telegram" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="rEmail" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="rPassword" placeholder="Password" required>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms" class="terms">I accept the Terms & Conditions</label>
+                
+            </div>
+            <button class="btn" id="submitSignUp">Sign Up</button>
+            
+            <p class="or">----------or--------</p>
+            <!-- <div class="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+            </div> -->
+            <div class="links">
+               <span> <p>Already Have Account?</p></span>
+               <button id="signInButton">Sign In</button>
+               
+            </div>
+        </form>
+    </div>
+</div>
+
+
+  </div>
+
+  
+
+  <div class="container" id="signIn">
+       <h2>Welcome back to Ethioware <span class="wrapped">Community</span> </h2>
+            <div class="social-login">
+                <button class="google-login">
+                    <img src="public/google.png" alt="Google Logo"> Log In with Google
+                </button>
+                <button class="github-login">
+                    <img src="public/github.png" alt="GitHub Logo"> Log In with Github
+                </button>
+            </div>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Sign In</button>
+        </form>
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+          <p>Don't have account yet?</p>
+          <button id="signUpButton">Sign Up</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
