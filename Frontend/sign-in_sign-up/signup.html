@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="signupstyle.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,6 +22,7 @@
             <div class="form-container">
                 <h2>Join & Connect the Fastest Growing Online Community</h2>
                 <form>
+                    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
                     <div class="input-group">
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name" placeholder="Enter Your First Name">
@@ -29,9 +31,9 @@
                         <label for="last-name">Last Name</label>
                         <input type="text" id="last-name" name="last-name" placeholder="Enter Your Last Name">
                     </div>
-                     <div class="input-group">
+                    <div class="input-group">
                         <label for="user-name">User Name</label>
-                        <input type="text" id="user-name" name="-name" placeholder="Enter Your telegram username">
+                        <input type="text" id="user-name" name="user-name" placeholder="Enter Your Telegram Username">
                     </div>
                     <div class="input-group">
                         <label for="email">Email</label>
@@ -41,18 +43,18 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Enter Password">
                     </div>
-                   
                     <div class="input-group checkbox-group">
                         <div class="terms">
                             <input type="checkbox" id="terms" name="terms">
                             <label for="terms" class="terms">I accept the Terms & Conditions</label>
                         </div>
-                     <button type="submit">Sign Up</button>
-                 </div>
-                    <p>Own an Account? <a href="signin.html">SIGN IN</a></p>
+                        <button type="submit" id="submitSignUp">Sign Up</button>
+                    </div>
+                    <p id="signInButton">Own an Account? <a href="signin.html">SIGN IN</a></p>
                 </form>
             </div>
         </div>
     </div>
+    <script type="module" src="firebaseauth.js"></script>
 </body>
 </html>

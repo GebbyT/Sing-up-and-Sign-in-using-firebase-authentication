@@ -126,7 +126,7 @@ body {
 
 .google-login {
     width:200px;
-    height: 48px;
+    height: 68px;
     background: rgba(250, 250, 250, 1);
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 8px;
@@ -136,7 +136,7 @@ body {
 
 .github-login {
     width: 200px;
-    height: 48px;
+    height: 68px;
     background: rgba(250, 250, 250, 1);
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 8px;
@@ -145,8 +145,8 @@ body {
 }
 
 .google-login img, .github-login img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .login-form {
@@ -160,12 +160,12 @@ body {
 .login-form label {
     text-align: left;
     color: #757575;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: -20px;
     }
 
 .login-form input {
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     outline: none;
