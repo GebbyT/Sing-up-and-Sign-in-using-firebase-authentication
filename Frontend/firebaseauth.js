@@ -26,6 +26,7 @@
  const app = initializeApp(firebaseConfig);
 
  function showMessage(message, divId){
+    console.log("showMessage called with:", message, divId); 
     var messageDiv=document.getElementById(divId);
     messageDiv.style.display="block";
     messageDiv.innerHTML=message;
@@ -38,7 +39,7 @@
 
  
  const signUp=document.getElementById('submitSignUp');
- signUp.addEventListener('submit', (event)=>{
+ signUp.addEventListener('click', (event)=>{
     event.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -80,7 +81,7 @@
  });
 
  const signIn=document.getElementById('submitSignIn');
- signIn.addEventListener('submit', (event)=>{
+ signIn.addEventListener('click', (event)=>{
     event.preventDefault();
     const email=document.getElementById('email').value;
     const password=document.getElementById('password').value;
