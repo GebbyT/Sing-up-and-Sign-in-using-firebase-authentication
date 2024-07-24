@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="signupstyle.css">
+    <script type="module" src="firebaseauth.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -16,29 +18,30 @@
                 <p>We're focused on Education and the role of tech to plant the seeds of the future!</p>
             </div>
         </div>
-        <div class="right">
-            <div class="form-container" id="signup">
+        <div class="right" id="signup" >
+            <div class="form-container">
                 <h2>Join & Connect the Fastest Growing Online Community</h2>
-                <form>
+                <form method="post" action="">
+                    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
                     <div class="input-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter Your First Name">
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter Your First Name" required>
                     </div>
                     <div class="input-group">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter Your Last Name">
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter Your Last Name" required>
                     </div>
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="gtely@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="gtely@gmail.com" required>
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter Password">
+                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
                     </div>
                     <div class="input-group">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Password">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Password" required>
                     </div>
                     <div class="input-group checkbox-group">
                         <div class="terms">
@@ -47,11 +50,11 @@
                         </div>
                      <button type="submit" class="signUpButton" id="submitSignUp">Sign Up</button>
                  </div>
-                    <p>Own an Account? <a href="signin.html">SIGN IN</a></p>
+                    <p class="signup-link">Own an Account? <a href="signin.html">SIGN IN</a></p>
                 </form>
             </div>
         </div>
     </div>
-    <script src="firebaseauth.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
