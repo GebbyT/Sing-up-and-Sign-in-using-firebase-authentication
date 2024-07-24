@@ -18,7 +18,7 @@
             <h2>Online Community For <span class="wrapped">students</span></h2>
             <p class="left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         </div>
-        <div class="right-section">
+        <div class="right-section" id="signIn">
             <h2>Welcome back to Ethioware <span class="wrapped">Community</span> </h2>
             <div class="social-login">
                 <button class="google-login">
@@ -28,8 +28,10 @@
                     <img src="public/github.png" alt="GitHub Logo"> Log In with Github
                 </button>
             </div>
-            <form class="login-form" id="signIn">
-                <label for="email">Email or Username</label>
+            <form class="login-form" method="post" action="">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+                <label for="email">Email</label>
                 <input type="text" id="email" name="email" required>
                 
                 <label for="password">Password</label>
@@ -43,13 +45,14 @@
                       <input type="checkbox" id="remember-me">
                       <label for="remember-me">Remember me</label>
                   </div>
-                    <button type="submit" class="login-button" id="signInButton">Log In</button>
+                    <button type="submit" class="login-button" id="submitSignIn">Log In</button>
                 </div>
                 
             </form>
-            <p class="signup-link">No Account yet? <a href="signup.html">Sign Up</a></p>
+            <p class="signin-link">No Account yet? <a href="signup.html">SIGN UP</a></p>
         </div>
     </div>
-    <script src="firebaseauth.js"></script>
+    <script type="module" src="firebaseauth.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
