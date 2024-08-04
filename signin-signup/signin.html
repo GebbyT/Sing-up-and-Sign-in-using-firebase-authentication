@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Ethioware</title>
+    <link rel="stylesheet" href="signinstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="title-container">
+                <img src="public/image.png" alt="Logo" class="logo">
+                <h1>Ethioware-software</h1>
+            </div>
+            <img src="public/Illustration.png" alt="Ethioware Software" class="main-image">
+            <h2>Online Community For <span class="wrapped">students</span></h2>
+             <p>We're focused on Education and the role of tech to plant the seeds of the future!</p>
+        </div>
+        <div class="right-section">
+            <h2>Welcome back to Ethioware <span class="wrapped">Community</span></h2>
+            <!-- <div class="social-login">
+                <button class="google-login">
+                    <img src="public/google.png" alt="Google Logo"> Log In with Google
+                </button>
+                <button class="github-login">
+                    <img src="public/github.png" alt="GitHub Logo"> Log In with Github
+                </button>
+            </div> -->
+            <form class="login-form">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                <label for="email" class="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password" class="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="options">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit" id="submitSignIn" class="login-button">Log In</button>
+                </div>
+            </form>
+            <p class="signup-link" id="signUpButton">No Account yet? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script type="module" src="firebaseauth.js"></script>
+</body>
+</html>
