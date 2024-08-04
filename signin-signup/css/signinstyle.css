@@ -27,7 +27,7 @@ body {
 }
 
 .left-section {
-    background-image: url('public/bgimage.png');
+    background-image: url('../public/bgimage.png');
     background-size: cover; 
     background-position: center;
     height: auto;

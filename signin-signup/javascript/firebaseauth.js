@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           const docRef = doc(db, "users", user.uid);
           setDoc(docRef, userData)
             .then(() => {
-              window.location.href = "signin.html";
+              window.location.href = "../html/signin.html";
             })
             .catch((error) => {
               console.error("error writing document", error);
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           showMessage("Login is successful", "signInMessage");
           const user = userCredential.user;
           localStorage.setItem("loggedInUserId", user.uid);
-          window.location.href = "homepage.html";
+          window.location.href = "../html/homepage.html";
         })
         .catch((error) => {
           const errorCode = error.code;
